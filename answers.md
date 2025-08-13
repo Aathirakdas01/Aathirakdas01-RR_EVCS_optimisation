@@ -3,16 +3,16 @@
 ## Structure
 
 1. **Create seperate folders for scripts (including config.py, _init_.py, and functions) and Output**
-   - RR_EVCS_optimisation/
-│
-├── scripts/
-│   ├── __init__.py
-    ├── config.py
-│   ├── data_loader.py
-│   └── optimise.py
-│
-├── Output
-└── evcs_optimisation.ipynb
+
+   RR_EVCS_optimisation/
+   --scripts/
+      -- _init_.py
+      -- config.py
+      -- data_loader.py
+      -- function.py
+   --Output
+   --notebooks
+      --evcs_optimisation.ipynb
 
 2. **Create `config.py`:**
    - Instead of hardcoding values, define constants in the file. Example:
@@ -30,7 +30,7 @@
 
 3. **Create `_init_.py`:**
    - Include all  Imports and Configurations here
-```python
+   ```python
      import os
    import pandas as pd
    import numpy as np
@@ -46,30 +46,19 @@
    from . import optimise
      ```
 
-## Functions
+ ## Functions
 
 1. **Create `data_loader.py`:**
    - Define 'load_network_data()' and 'load_demand_data()' used to load input data.
 
-2. **Add General `build_and_solve_model()` Function to `optimise.py`:**
-   - Also these functions should have better names, include descritpions and have type annotations.
+2. **Add General `build_and_solve_model()` Function to `funcctions.py`:**
+   - Also the function should have better names, include descritpions and have type annotations.
      ```python
-        def build_and_solve_model(nodes, demand, dist_matrix):
+        def build_and_solve_model(node_list, demand_node, dist_matrix):
             """
             Perform network optimisation.
             """
      ```
-
-## Main Notebook `evcs_optimisation.ipynb`
-
-1. **Import the scripts package:**
-   - To include all imports and configuration
-   - To get a clean requirements.txt
-   
-   ```python
-      import scripts
-     ```
-
 
 ## Commenting/Segmentation/Naming
 
