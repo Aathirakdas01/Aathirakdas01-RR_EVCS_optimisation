@@ -15,5 +15,4 @@ LpBinary, LpContinuous, PULP_CBC_CMD
 
 # Expose key modules/functions directly
 from . import config
-from . import data_loader
-from . import optimise
+from . import functions
