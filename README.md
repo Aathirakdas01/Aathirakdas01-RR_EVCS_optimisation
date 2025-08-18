@@ -47,11 +47,3 @@ Total Cost = Σ (x[j] × station_cost) + Σ (y[i,j] × distance[i,j] × per_km_c
 - The number of stations is limited (`max_stations`).
 
 ---
-
-## 📂 File Structure
-📁 Aathirakdas01-RR_EVCS_optimisation/
-│
-├── Input/network.csv           # Link data with columns: from, to, distance, capacity
-├── Input/ev_demand.csv         # EV demand at each node: node, demand
-├── evcs_optimisation.py        # Main Python script
-└── README.md                   # This file
