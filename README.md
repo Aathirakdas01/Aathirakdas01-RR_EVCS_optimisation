@@ -4,6 +4,21 @@ This project formulates and solves an electric vehicle charging station (EVCS) p
 
 ---
 
+# Data 
+Download the data required for the tutorial here:
+
+https://zenodo.org/records/16838828
+
+
+## 📁 Folder Structure
+- `data/`: Raw or processed input data
+- `Output/`: Trained models and scalers
+- `notebooks/`: Jupyter notebooks (exploration, training, etc.)
+- `scripts/`: Python scripts for modular code (e.g., training, plotting)
+- `config.py`: Central config (paths, hyperparams, etc.)
+- `functions.py`: Utility functions for loading, scaling, training
+- `_init_.py`: Centralized shared imports
+
 ## 🧠 Problem Description
 
 We model the network as a set of nodes and links. Each node may have a certain EV charging demand. The goal is to determine:
