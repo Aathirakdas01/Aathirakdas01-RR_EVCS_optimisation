@@ -2,9 +2,14 @@
 # Constants and model settings
 # -------------------------------
 
-# File paths
-NETWORK_CSV_PATH = "data/network.csv"
-DEMAND_CSV_PATH = "data/ev_demand.csv"
+import os
+
+# Absolute path to repo root (where scripts/ is located)
+REPO_ROOT = os.path.dirname(os.path.dirname(__file__))
+
+NETWORK_CSV_PATH = os.path.join(REPO_ROOT, "data", "network.csv")
+DEMAND_CSV_PATH = os.path.join(REPO_ROOT, "data", "ev_demand.csv")
+NETWORK_IMAGE_PATH = os.path.join(REPO_ROOT, "data", "Sioux-Falls-Network.jpg")
 
 # Maximum distance covered
 COVERAGE_DIST = 20
